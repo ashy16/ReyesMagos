@@ -1,1 +1,347 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cartas a los Reyes Magos</title>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:wght@700&display=swap" rel="stylesheet">
+
+  <style>
+    
+    body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #000080;
+  color: rgb(254, 255, 254);
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  background-image: url('https://www.transparenttextures.com/patterns/stardust.png');
+  overflow-x: hidden;
+}
+header h1 {
+  margin: 0;
+  font-family: 'Great Vibes', cursive;
+  font-size: 4rem; 
+  color: white;
+}
+
+.card {
+    font-family: 'Courier Prime', monospace; 
+  font-weight: bold; 
+  background: #fff url('https://www.transparenttextures.com/patterns/linen.png');
+  color: #000;
+  padding: 20px;
+  border-radius: 10px;
+  margin: 10px auto;
+  width: 80%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  font-size: 1.2rem;
+  line-height: 1.5;
+  text-align: left;
+}
+
+    /* Animaciones */
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+
+    @keyframes snow {
+      0% {
+        transform: translateY(0);
+      }
+      100% {
+        transform: translateY(100vh);
+      }
+    }
+
+    header {
+      background-color: #000655;
+      padding: 20px;
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    header h1 {
+      margin: 0;
+      font-family: 'Great Vibes', cursive;
+      font-size: 3rem;
+      color: white;
+    }
+
+    nav {
+      margin: 20px;
+    }
+
+    nav button {
+      background-color: #ADD8E6;
+      color: #000;
+      padding: 10px 20px;
+      margin: 5px;
+      border: none;
+      border-radius: 10px;
+      font-size: 1.2rem;
+      cursor: pointer;
+      transition: background-color 0.3s, transform 0.2s;
+    }
+
+    nav button:hover {
+      background-color: #5F9EA0;
+      transform: scale(1.1);
+    }
+
+    .content {
+      display: none;
+      padding: 20px;
+      margin: 20px;
+      background-color: #000;
+      border-radius: 15px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    .visible {
+      display: block;
+    }
+
+        .card {
+  background: #fff url('https://www.transparenttextures.com/patterns/linen.png');
+  color: #000;
+  padding: 20px;
+  border-radius: 10px;
+  margin: 10px auto;
+  width: 80%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  font-family: 'Courier New', Courier, monospace; /* Fuente de máquina de escribir */
+  font-size: 1.2rem;
+  line-height: 1.5;
+  text-align: left;
+ 
+}
+
+    .content img {
+      width: 250px;
+      height: 250px;
+      border-radius: 50%;
+      margin-bottom: 10px;
+      border: 3px solid red;
+      box-shadow: 0 0 10px 5px rgb(33, 109, 3);
+    }
+
+    footer {
+      margin-top: 30px;
+      background-color: #000;
+      padding: 10px;
+    }
+
+    footer p {
+      margin: 0;
+      font-size: 1rem;
+    }
+
+
+.shooting-star {
+  position: absolute;
+  width: 3px;
+  height: 3px;
+  background: white;
+  box-shadow: 0 0 10px white;
+  border-radius: 50%;
+  animation: shoot 2s linear infinite;
+}
+
+@keyframes shoot {
+  0% {
+    transform: translate(-100px, -100px);
+  }
+  100% {
+    transform: translate(100vw, 100vh);
+  }
+}
+
+    /* Nieve */
+    .snow {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 10px;
+      height: 10px;
+      background-color: white;
+      border-radius: 50%;
+      opacity: 0.8;
+      animation: snow 10s linear infinite;
+    }
+
+    @keyframes snow {
+      0% {
+        transform: translateY(-10px);
+      }
+      100% {
+        transform: translateY(100vh);
+      }
+    }
+
+
+
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Queridos Reyes Magos</h1>
+    <p>Les queremos agradecer por lo que hacen por nosotros todo el año.</p>
+  </header>
+
+  <nav>
+    <button onclick="showContent('yue')">Yue</button>
+    <button onclick="showContent('mesic')">Mesic</button>
+    <button onclick="showContent('yael')">Yael</button>
+    <button onclick="showContent('santi')">Santi </button>
+    <button onclick="showContent('teololo')">Tadeo</button>
+    <button onclick="showContent('cain')">Caín</button>
+  </nav>
+
+  <!-- Currículum y carta para cada qn -->
+<div id="yue" class="content">
+<h2>Currículum de Yue</h2>
+<img src="Yue.jpeg" alt="Yue" style="width: 250px; height: 250px; border-radius: 50%; margin-bottom: 10px;">
+<p>Nombre: Yue Camila</p>   
+<p>Alias: Yueca Millanesa</p>
+<p>País: México</p>
+    <p>Calidad de hija: ⭐⭐⭐⭐⭐</p>
+    <p>Niña buena:(un poco desordenada pero de corazón muy cariñoso) ✅</p>
+    <div class="card">
+      <p>Queridos Reyes Magos,</p>
+      <p>Queridos reyes magos:
+        Este año me he portado como un adolescente rebelde común y corriente, con todo y cambios hormonales y humorísticos 👌🏻, así que teniendo en cuenta este importante punto quisiera hacerle unas peticiones para este 6 de enero 😁, Número 1: Un termo de agua (de tamaño considerable) porque si no luego no me llevo awita y me deshidrato, Number 2: Ropita (que me quede) porque luego no se que ponerme y siempre parezco retrato, Número 3: Una rodilla nueva, nah no es cierto algo que quieran donar a mi cabello porque siempre es un desastre, Number 4: Un alguito para mi cara y labios porque luego parezco señora desvelada con 5 hijos y por último pero no menos importante el Number 5: Poder pasar mas tiempo con Bruno y mi familia, pero quiero ver a Bruno porque luego casi no podemos convivir (Cuando mucho entre 10-30 minutos (Cuando vamos a la escuela porque si no nadota) y me pongo troste), muchos thankyous y que diosito los bendiga, se les quiere.</p>
+      <p>Con cariño, Yue.</p>
+    </div>
+  </div>
+
+  <div id="mesic" class="content">
+    <h2>Currículum de Mesic</h2>
+    <img src="Ashley RM.jpeg" alt="Mesic" style="width: 250px; height: 250px; border-radius: 50%; margin-bottom: 10px;">
+    <p>Nombre: Zanhia Mesic</p>
+    <p>Alias: Zonia Messi</p>
+    <p>País: México</p>
+    <p>Calidad de hija: ⭐⭐⭐⭐⭐</p>
+    <p>Niña buena:(un poco ansiosa pero de corazón muy sincero) ✅</p>
+    <div class="card">
+      <p>Queridos Reyes Magos,</p>
+      <p>Gracias por siempre cuidar de mí y enseñarme que nunca estaré sola, agradezco su guía para poder vivir este mundo desde una perspectiva más avanzada. Aprecio cada detalle que tienen conmigo y espero nunca decepcionarlos, realemente yo no considero pedir algo en especial más que un pencil para poder trabajar y estudiar más a gusto, de ahí en fuera lo que ustedes me quiran traer me hará muy feliz recibirlo. Espero que tengan un hermoso viaje por la vida,  mi verdadero deseo es que duren siempre y si al menos no sucede materialmente siempre estará cada uno de los pasos que me han enseñado a dar en mi corazón.</p>
+      <p>Con amor, Mesic.</p>
+    </div>
+  </div>
+
+  <div id="yael" class="content">
+    <h2>Currículum de Yael</h2>
+    <img src="Yael RM.jpeg" alt="Yael" style="width: 250px; height: 250px; border-radius: 50%; margin-bottom: 10px;">
+    <p>Nombre: Yael</p>
+    <p>Alias: Mano Kikian</p>
+    <p>País: Chile</p>
+    <p>Calidad de hijo: ⭐⭐⭐⭐⭐</p>
+    <p>Niño bueno: (un poco descarrilado pero de corazón muy grande) ✅</p>
+    <div class="card">
+      <p>Queridos Reyes Magos,</p>
+      <p>Espero que esta carta les encuentre bien. Me dirijo a ustedes con la esperanza de que me concedan un regalo especial este año.
+        
+        Mi nombre es Yael ,y soy un gran admirador del culturismo y la salud. He estado siguiendo el trabajo de Chris Bumstead, también conocido como CBum, y me inspira su dedicación y pasión por el deporte. Por eso, les pido que me concedan un preentreno de CBum. Me gustaría aprender de él y mejorar mi propia rutina de entrenamiento. Creo que un preentreno con CBum me ayudaría a alcanzar mis objetivos de fitness y a mejorar mi salud en general. Sé que esto es un regalo muy especial, pero espero que ustedes me lo concedan. Estoy dispuesto a trabajar duro y a seguir las instrucciones de CBum para aprovechar al máximo este regalo.
+        Muchas gracias por considerar mi petición. Espero con ansias su respuesta.</p>
+      <p>Con cariño, Yael.</p>
+    </div>
+  </div>
+
+  <div id="santi" class="content">
+    <h2>Currículum de Santi</h2>
+    <img src="Sant.jpeg" alt="Yael" style="width: 250px; height: 250px; border-radius: 50%; margin-bottom: 10px;">
+    <p>Nombre: Santi Nuriel</p>
+    <p>Alias: Chanti BB</p>
+    <p>País: Mexico</p>
+    <p>Calidad de hijo: ⭐⭐⭐⭐⭐</p>
+    <p>Niño bueno:(un poco melindres pero de corazón muy amororso) ✅</p>
+    <div class="card">
+      <p>Queridos Reyes Magos,</p>
+      <p>Queridos Reyes Magos,
+
+        Soy Santi Nuriel y estoy muy emocionado de que estén llegando el 6 de enero. Y me gustaría pedir algunos regalos. Me encantaría tener algunos Legos nuevos para construir y usar mi imaginación y si no me gustaría tener muchos carros de juguete, sin embargo lo que ustedes eligan para mi estoy seguro de que me harà muy feliz. Gracias, cono todo el amor del mundo.</p>
+      <p>Con cariño, Santi bb.</p>
+    </div>
+  </div>
+  
+  <div id="cain" class="content">
+    <h2>Currículum de Caín</h2>
+    <img src="Cain RM.jpeg" alt="Cain" style="width: 250px; height: 250px; border-radius: 50%; margin-bottom: 10px;">
+    <p>Nombre:Cain Tadeo</p>
+    <p>Alias: Tain</p>
+    <p>País: Mexico</p>
+    <p>Calidad de hijo: ⭐⭐⭐⭐⭐</p>
+    <p>Niño bueno:(un poco acelerado pero de corazón muy noble) ✅</p>
+    <div class="card">
+      <p>Queridos Reyes Magos,</p>
+      <p>
+        ¡Feliz Navidad! Me llamo Caín y espero que hayan tenido un buen viaje desde Oriente.
+        Este año he sido bueno y he estado estudiando mucho en la escuela. Me encantaría que me trajeran un regalo muy especial confío plenamente que lo que me traigan me hará muy feliz.</p>
+      <p>Con cariño, Caín.</p>
+    </div>
+  </div>
+
+  <div id="teololo" class="content">
+    <h2>Currículum de Teololo</h2>
+    <img src="Teololo.jpeg" alt="Teololo" style="width: 250px; height: 250px; border-radius: 50%; margin-bottom: 10px;">
+    <p>Nombre:Liam Tadeo</p>
+    <p>Alias: Teololo</p>
+    <p>País: Mexico</p>
+    <p>Calidad de hijo: ⭐⭐⭐⭐⭐</p>
+    <p>Niño bueno:(un poco endemoniado pero de corazón muy tierno) ✅</p>
+    <div class="card">
+      <p>Queridos Reyes Magos,</p>
+      <p>Espero que estén bien. Este año es mi primera navidad con ustedes y estoy muy feliz de compartirla con personas que me aprecian tanto es por eso que lo unico que pido es tenerlos cuidandome y apoyando en mi crecimiento siempre, el detalle que ustedes consideren bueno para mi me hará muy feliz, con que no sea de latex porque soy alérgico. Gracias por todo.</p>
+      <p>Con cariño, Teololo.</p>
+    </div>
+  </div>
+
+
+  <footer>
+    <p>¡Con mucho amor para los mejores Reyes Magos! ⭐️</p>
+  </footer>
+
+  <script>
+    function showContent(id) {
+      document.querySelectorAll('.content').forEach(content => {
+        content.style.display = 'none';
+      });
+      document.getElementById(id).style.display = 'block';
+    }
+
+// Crear copos de nieve dinámicamente
+setInterval(() => {
+  const snowflake = document.createElement('div');
+  snowflake.classList.add('snow');
+  snowflake.style.setProperty('--size', Math.random());
+  snowflake.style.setProperty('--speed', Math.random());
+  snowflake.style.setProperty('--opacity', Math.random());
+  snowflake.style.setProperty('--wind', Math.random() - 0.5);
+  snowflake.style.left = `${Math.random() * 100}vw`;
+  document.body.appendChild(snowflake);
+  setTimeout(() => snowflake.remove(), 10000);
+}, 200);
+
+setInterval(() => {
+  const star = document.createElement('div');
+  star.classList.add('shooting-star');
+  star.style.top = `${Math.random() * 50}vh`;
+  star.style.left = `${Math.random() * 50}vw`;
+  document.body.appendChild(star);
+
+  setTimeout(() => star.remove(), 2000);
+}, 3000);
+
+
+
+  </script>
+</body>
+</html>
 
